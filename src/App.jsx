@@ -136,7 +136,7 @@ const Header = () => (
 
       <div className="flex items-center gap-3 pl-4 border-l border-white/5">
         <div className="text-right hidden sm:block">
-          <p className="text-sm font-medium text-zinc-200">Mike Stevenson</p>
+          <p className="text-sm font-medium text-zinc-200">Christopher George</p>
           <p className="text-xs text-zinc-500">Project Manager</p>
         </div>
         <div className="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center border border-white/5 shadow-inner overflow-hidden">

@@ -26,7 +26,7 @@ const Header = () => {
 
                 <div className="flex items-center gap-3 pl-4 border-l border-gray-200">
                     <div className="text-right hidden sm:block">
-                        <p className="text-sm font-medium text-slate-900">Mike Stevenson</p>
+                        <p className="text-sm font-medium text-slate-900">Christopher George</p>
                         <p className="text-xs text-slate-500">Project Manager</p>
                     </div>
                     <div className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center border-2 border-white shadow-sm overflow-hidden">
