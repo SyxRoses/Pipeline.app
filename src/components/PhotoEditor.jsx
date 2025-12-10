@@ -187,7 +187,7 @@ const PhotoEditor = ({ imageFile, onSave, onCancel, initialAnnotations = [] }) =
                         <ColorSwatch color="#f43f5e" active={color === '#f43f5e'} onClick={() => setColor('#f43f5e')} />
                         <ColorSwatch color="#ffffff" active={color === '#ffffff'} onClick={() => setColor('#ffffff')} />
                     </div>
-                    <button onClick={handleSave} className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
+                    <button onClick={handleSave} className="flex items-center gap-2 px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-medium transition-colors">
                         <Check size={18} /> Save & Close
                     </button>
                 </div>
@@ -204,7 +204,7 @@ const PhotoEditor = ({ imageFile, onSave, onCancel, initialAnnotations = [] }) =
 const ToolButton = ({ icon: Icon, active, onClick }) => (
     <button
         onClick={onClick}
-        className={`p - 2 rounded - md transition - all ${active ? 'bg-zinc-800 text-orange-500 shadow-sm' : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'} `}
+        className={`p - 2 rounded - md transition - all ${active ? 'bg-zinc-800 text-cyan-500 shadow-sm' : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'} `}
     >
         <Icon size={20} />
     </button>

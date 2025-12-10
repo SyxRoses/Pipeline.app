@@ -87,11 +87,11 @@ const AsideNav = ({ activePage, onNavigate }) => (
 const NavItem = ({ icon: Icon, label, active, onClick }) => (
   <button
     onClick={onClick}
-    className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 border ${active ? 'bg-orange-600/10 border-orange-500/20 text-orange-500 shadow-glow' : 'border-transparent text-zinc-400 hover:bg-white/5 hover:text-zinc-100'}`}
+    className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 border ${active ? 'bg-cyan-600/10 border-cyan-500/20 text-cyan-500 shadow-glow' : 'border-transparent text-zinc-400 hover:bg-white/5 hover:text-zinc-100'}`}
   >
-    <Icon size={20} className={active ? "text-orange-500" : ""} />
+    <Icon size={20} className={active ? "text-cyan-500" : ""} />
     <span className="font-medium">{label}</span>
-    {active && <div className="ml-auto w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.8)]"></div>}
+    {active && <div className="ml-auto w-1.5 h-1.5 rounded-full bg-cyan-500 shadow-[0_0_8px_rgba(6,182,212,0.8)]"></div>}
   </button>
 );
 
@@ -105,7 +105,7 @@ const MobileNav = ({ activePage, onNavigate }) => (
 );
 
 const MobItem = ({ icon: Icon, label, active, onClick }) => (
-  <button onClick={onClick} className={`flex flex-col items-center gap-1 ${active ? 'text-orange-500' : 'text-zinc-500'}`}>
+  <button onClick={onClick} className={`flex flex-col items-center gap-1 ${active ? 'text-cyan-500' : 'text-zinc-500'}`}>
     <Icon size={24} />
     <span className="text-[10px] font-medium">{label}</span>
   </button>
@@ -125,7 +125,7 @@ const Header = () => (
         <input
           type="text"
           placeholder="Search reports, stations..."
-          className="pl-10 pr-4 py-2 bg-zinc-900/50 border border-zinc-700/50 rounded-full text-sm text-zinc-200 focus:outline-none focus:ring-2 focus:ring-orange-500/50 w-64 placeholder:text-zinc-600"
+          className="pl-10 pr-4 py-2 bg-zinc-900/50 border border-zinc-700/50 rounded-full text-sm text-zinc-200 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 w-64 placeholder:text-zinc-600"
         />
       </div>
 

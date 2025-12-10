@@ -35,11 +35,11 @@ const OnboardingWizard = () => {
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4">
             <div className="bg-surface border border-white/10 rounded-2xl w-full max-w-2xl shadow-2xl overflow-hidden">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-orange-600 to-orange-500 p-6">
+                <div className="bg-gradient-to-r from-cyan-600 to-cyan-500 p-6">
                     <div className="flex justify-between items-start">
                         <div>
                             <h2 className="text-2xl font-bold text-white">New Project Setup</h2>
-                            <p className="text-orange-100/80 mt-1">Let's get your pipeline project configured</p>
+                            <p className="text-cyan-100/80 mt-1">Let's get your pipeline project configured</p>
                         </div>
                         <button onClick={() => setShowOnboarding(false)} className="text-white/60 hover:text-white">
                             <X size={24} />
@@ -206,7 +206,7 @@ const OnboardingWizard = () => {
                     {step < 4 ? (
                         <button
                             onClick={nextStep}
-                            className="flex items-center gap-2 px-6 py-2.5 bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors"
+                            className="flex items-center gap-2 px-6 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-medium transition-colors"
                         >
                             Continue <ChevronRight size={20} />
                         </button>
@@ -227,8 +227,8 @@ const OnboardingWizard = () => {
 const StepContent = ({ icon: Icon, title, description, children }) => (
     <div>
         <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center">
-                <Icon size={20} className="text-orange-500" />
+            <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+                <Icon size={20} className="text-cyan-500" />
             </div>
             <div>
                 <h3 className="text-lg font-semibold text-white">{title}</h3>

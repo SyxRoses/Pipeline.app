@@ -68,7 +68,7 @@ const ReportDetail = ({ report, onClose, onApprove, onReject }) => {
                                 value={comment}
                                 onChange={(e) => setComment(e.target.value)}
                                 placeholder="Optional comment for approval/rejection..."
-                                className="w-full bg-zinc-900 border border-zinc-700 rounded-lg p-3 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 resize-none h-20"
+                                className="w-full bg-zinc-900 border border-zinc-700 rounded-lg p-3 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 resize-none h-20"
                             />
                         </div>
                     )}

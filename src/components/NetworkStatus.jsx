@@ -8,7 +8,7 @@ const NetworkStatus = () => {
     if (isOnline && pendingCount === 0 && !isSyncing) return null;
 
     return (
-        <div className={`fixed bottom-0 left-0 right-0 z-[100] px-4 py-2 flex items-center justify-center gap-3 transition-colors ${isOnline ? 'bg-orange-600' : 'bg-zinc-800 border-t border-zinc-700'}`}>
+        <div className={`fixed bottom-0 left-0 right-0 z-[100] px-4 py-2 flex items-center justify-center gap-3 transition-colors ${isOnline ? 'bg-cyan-600' : 'bg-zinc-800 border-t border-zinc-700'}`}>
             {!isOnline && (
                 <>
                     <WifiOff size={18} className="text-zinc-400" />

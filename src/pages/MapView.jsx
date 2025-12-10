@@ -103,7 +103,7 @@ const MapView = () => {
                     <h3 className="font-bold text-white">{project?.name || 'Station Overview'}</h3>
                     <button
                         onClick={() => setShowCrews(!showCrews)}
-                        className={`text-[10px] px-2 py-0.5 rounded border border-zinc-600 ${showCrews ? 'bg-orange-600 text-white border-orange-500' : 'bg-zinc-800 text-zinc-400'}`}
+                        className={`text-[10px] px-2 py-0.5 rounded border border-zinc-600 ${showCrews ? 'bg-cyan-600 text-white border-cyan-500' : 'bg-zinc-800 text-zinc-400'}`}
                     >
                         {showCrews ? 'Hide Crews' : 'Show Crews'}
                     </button>

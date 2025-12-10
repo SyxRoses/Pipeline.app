@@ -6,7 +6,7 @@ const ActivityFeed = ({ items }) => {
         switch (type) {
             case 'issue': return <AlertCircle className="text-rose-500" size={18} />;
             case 'completion': return <CheckCircle2 className="text-emerald-500" size={18} />;
-            case 'safety': return <HardHat className="text-orange-500" size={18} />;
+            case 'safety': return <HardHat className="text-cyan-500" size={18} />;
             default: return <FileText className="text-blue-500" size={18} />;
         }
     };
@@ -15,7 +15,7 @@ const ActivityFeed = ({ items }) => {
         <div className="card h-full">
             <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-bold text-white">Recent Site Activity</h3>
-                <button className="text-sm font-medium text-orange-500 hover:text-orange-400 transition-colors">View All</button>
+                <button className="text-sm font-medium text-cyan-500 hover:text-cyan-400 transition-colors">View All</button>
             </div>
 
             <div className="relative pl-4 border-l border-zinc-800 space-y-8">

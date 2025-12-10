@@ -9,11 +9,11 @@ const SegmentDetailPanel = ({ segment, onClose, onAssignCrew }) => {
     return (
         <div className="absolute top-4 right-4 w-80 bg-surface/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl z-[1001] overflow-hidden animate-fade-in">
             {/* Header */}
-            <div className="bg-gradient-to-r from-orange-600/20 to-orange-500/10 p-4 border-b border-white/5">
+            <div className="bg-gradient-to-r from-cyan-600/20 to-cyan-500/10 p-4 border-b border-white/5">
                 <div className="flex justify-between items-start">
                     <div>
                         <h3 className="font-bold text-white flex items-center gap-2">
-                            <MapPin size={16} className="text-orange-500" />
+                            <MapPin size={16} className="text-cyan-500" />
                             {segment.name}
                         </h3>
                         <p className="text-xs text-zinc-400 mt-1">{segment.startStation} → {segment.endStation}</p>
@@ -52,7 +52,7 @@ const SegmentDetailPanel = ({ segment, onClose, onAssignCrew }) => {
                 <div className="pt-2 border-t border-white/5 flex gap-2">
                     <button
                         onClick={() => onAssignCrew && onAssignCrew(segment)}
-                        className="flex-1 px-3 py-2 bg-orange-600 hover:bg-orange-500 text-white text-sm font-medium rounded-lg transition-colors"
+                        className="flex-1 px-3 py-2 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-medium rounded-lg transition-colors"
                     >
                         Assign Crew
                     </button>

@@ -59,14 +59,14 @@ const ReportList = ({ filter = 'all', onSelectReport }) => {
                                 {getTypeBadge(report.type)}
                                 {getStatusBadge(report.status)}
                             </div>
-                            <h4 className="text-white font-medium group-hover:text-orange-400 transition-colors">{report.title}</h4>
+                            <h4 className="text-white font-medium group-hover:text-cyan-400 transition-colors">{report.title}</h4>
                             <div className="flex items-center gap-4 mt-2 text-xs text-zinc-500">
                                 <span className="flex items-center gap-1"><User size={12} /> {report.submittedBy}</span>
                                 <span className="flex items-center gap-1"><MapPin size={12} /> {report.station}</span>
                                 <span>{report.date}</span>
                             </div>
                         </div>
-                        <ChevronRight size={20} className="text-zinc-600 group-hover:text-orange-500 transition-colors" />
+                        <ChevronRight size={20} className="text-zinc-600 group-hover:text-cyan-500 transition-colors" />
                     </div>
                 </div>
             ))}

@@ -20,7 +20,7 @@ const Crew = () => {
 
     const getRoleBadge = (role) => {
         const colors = {
-            'Welder': 'bg-orange-500/10 text-orange-400',
+            'Welder': 'bg-cyan-500/10 text-cyan-400',
             'Inspector': 'bg-blue-500/10 text-blue-400',
             'Superintendent': 'bg-purple-500/10 text-purple-400',
             'Surveyor': 'bg-emerald-500/10 text-emerald-400',
@@ -47,7 +47,7 @@ const Crew = () => {
 
                 <button
                     onClick={() => setShowForm(true)}
-                    className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-500 text-white rounded-lg text-sm font-medium transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg text-sm font-medium transition-colors"
                 >
                     <Plus size={16} /> Add Member
                 </button>
@@ -61,7 +61,7 @@ const Crew = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Search by name or role..."
-                    className="w-full pl-10 pr-4 py-2.5 bg-zinc-900 border border-zinc-700 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+                    className="w-full pl-10 pr-4 py-2.5 bg-zinc-900 border border-zinc-700 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
                 />
             </div>
 

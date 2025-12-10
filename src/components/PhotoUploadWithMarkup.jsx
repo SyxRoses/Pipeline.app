@@ -69,7 +69,7 @@ const PhotoUploadWithMarkup = ({ label, onImageChange }) => {
             <label className="block text-sm font-medium text-zinc-400 mb-2">{label}</label>
 
             {!previewUrl ? (
-                <div {...getRootProps()} className={`border-2 border-dashed rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer transition-colors ${isDragActive ? 'border-orange-500 bg-orange-500/5' : 'border-zinc-700 bg-zinc-900/30 hover:bg-zinc-800/50 hover:border-zinc-500'}`}>
+                <div {...getRootProps()} className={`border-2 border-dashed rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer transition-colors ${isDragActive ? 'border-cyan-500 bg-cyan-500/5' : 'border-zinc-700 bg-zinc-900/30 hover:bg-zinc-800/50 hover:border-zinc-500'}`}>
                     <input {...getInputProps()} />
                     <Camera className="text-zinc-500 mb-2" size={32} />
                     <p className="text-sm font-medium text-zinc-400">Tap to Capture or Upload</p>
@@ -93,7 +93,7 @@ const PhotoUploadWithMarkup = ({ label, onImageChange }) => {
 
                         <button
                             onClick={() => setIsEditorOpen(true)}
-                            className="p-3 bg-orange-600 rounded-full text-white hover:bg-orange-500 transition-transform hover:scale-110 shadow-lg"
+                            className="p-3 bg-cyan-600 rounded-full text-white hover:bg-cyan-500 transition-transform hover:scale-110 shadow-lg"
                             title="Annotate"
                         >
                             <Edit2 size={20} />

@@ -33,7 +33,7 @@ const Inspections = () => {
 
     const getTypeIcon = (type) => {
         switch (type) {
-            case 'Weld': return <Flame size={14} className="text-orange-500" />;
+            case 'Weld': return <Flame size={14} className="text-cyan-500" />;
             case 'Coating': return <Droplets size={14} className="text-blue-500" />;
             case 'X-Ray': return <FileText size={14} className="text-purple-500" />;
             default: return <ClipboardCheck size={14} />;
@@ -52,13 +52,13 @@ const Inspections = () => {
                 <div className="flex gap-2">
                     <button
                         onClick={() => setView('list')}
-                        className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${view === 'list' ? 'bg-orange-600 text-white' : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700'}`}
+                        className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${view === 'list' ? 'bg-cyan-600 text-white' : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700'}`}
                     >
                         View All
                     </button>
                     <button
                         onClick={() => setView('new')}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-all ${view === 'new' ? 'bg-orange-600 text-white' : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700'}`}
+                        className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-all ${view === 'new' ? 'bg-cyan-600 text-white' : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700'}`}
                     >
                         <Plus size={16} /> New Inspection
                     </button>
@@ -75,7 +75,7 @@ const Inspections = () => {
                             <input
                                 type="text"
                                 placeholder="Search inspections..."
-                                className="w-full pl-10 pr-4 py-2.5 bg-zinc-900 border border-zinc-700 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+                                className="w-full pl-10 pr-4 py-2.5 bg-zinc-900 border border-zinc-700 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
                             />
                         </div>
                         <button className="flex items-center gap-2 px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-zinc-400 hover:bg-zinc-700">
@@ -100,7 +100,7 @@ const Inspections = () => {
                                             <p className="text-xs text-zinc-500 mt-1">{insp.reference} • Station {insp.station} • {insp.date}</p>
                                         </div>
                                     </div>
-                                    <ChevronRight size={20} className="text-zinc-600 group-hover:text-orange-500 transition-colors" />
+                                    <ChevronRight size={20} className="text-zinc-600 group-hover:text-cyan-500 transition-colors" />
                                 </div>
                             </div>
                         ))}
@@ -121,7 +121,7 @@ const Inspections = () => {
                             <button
                                 key={t.key}
                                 onClick={() => setInspectionType(t.key)}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-colors ${inspectionType === t.key ? 'bg-orange-600/10 border-orange-500/30 text-orange-500' : 'border-zinc-700 text-zinc-400 hover:border-zinc-600'}`}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-colors ${inspectionType === t.key ? 'bg-cyan-600/10 border-cyan-500/30 text-cyan-500' : 'border-zinc-700 text-zinc-400 hover:border-zinc-600'}`}
                             >
                                 <t.icon size={16} /> {t.label}
                             </button>
@@ -130,7 +130,7 @@ const Inspections = () => {
 
                     <form className="space-y-6">
                         <div className="flex items-center gap-2 text-lg font-semibold text-white border-b border-zinc-800 pb-3">
-                            <ClipboardCheck className="text-orange-500" />
+                            <ClipboardCheck className="text-cyan-500" />
                             <h2>{inspectionType === 'weld' ? 'Weld' : inspectionType === 'coating' ? 'Coating' : 'X-Ray'} Inspection Form</h2>
                         </div>
 

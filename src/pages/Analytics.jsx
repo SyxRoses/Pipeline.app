@@ -17,7 +17,7 @@ const Analytics = () => {
     if (loading) {
         return (
             <div className="flex items-center justify-center h-full">
-                <div className="text-orange-500 animate-pulse">Loading ML Models...</div>
+                <div className="text-cyan-500 animate-pulse">Loading ML Models...</div>
             </div>
         );
     }

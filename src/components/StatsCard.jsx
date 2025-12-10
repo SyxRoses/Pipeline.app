@@ -5,7 +5,7 @@ const StatsCard = ({ title, value, unit, trend, trendValue, icon: Icon, color = 
     const colorMap = {
         blue: "bg-blue-500/10 text-blue-400 border-blue-500/20",
         emerald: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-        orange: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+        cyan: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
         rose: "bg-rose-500/10 text-rose-400 border-rose-500/20",
         slate: "bg-zinc-800 text-zinc-400 border-zinc-700",
         amber: "bg-amber-500/10 text-amber-400 border-amber-500/20",

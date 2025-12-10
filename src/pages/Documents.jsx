@@ -51,7 +51,7 @@ const Documents = () => {
 
                 <button
                     onClick={() => setShowUpload(true)}
-                    className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-500 text-white rounded-lg text-sm font-medium transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg text-sm font-medium transition-colors"
                 >
                     <Upload size={16} /> Upload Document
                 </button>
@@ -66,7 +66,7 @@ const Documents = () => {
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         placeholder="Search documents..."
-                        className="w-full pl-10 pr-4 py-2.5 bg-zinc-900 border border-zinc-700 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+                        className="w-full pl-10 pr-4 py-2.5 bg-zinc-900 border border-zinc-700 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
                     />
                 </div>
 
@@ -86,13 +86,13 @@ const Documents = () => {
                     <div className="flex bg-zinc-800 rounded-lg p-1">
                         <button
                             onClick={() => setViewMode('grid')}
-                            className={`p-2 rounded ${viewMode === 'grid' ? 'bg-orange-600 text-white' : 'text-zinc-400'}`}
+                            className={`p-2 rounded ${viewMode === 'grid' ? 'bg-cyan-600 text-white' : 'text-zinc-400'}`}
                         >
                             <Grid size={16} />
                         </button>
                         <button
                             onClick={() => setViewMode('list')}
-                            className={`p-2 rounded ${viewMode === 'list' ? 'bg-orange-600 text-white' : 'text-zinc-400'}`}
+                            className={`p-2 rounded ${viewMode === 'list' ? 'bg-cyan-600 text-white' : 'text-zinc-400'}`}
                         >
                             <List size={16} />
                         </button>
@@ -169,7 +169,7 @@ const Documents = () => {
                             <button onClick={() => setShowUpload(false)} className="text-zinc-500 hover:text-white">×</button>
                         </div>
                         <div className="p-6">
-                            <div {...getRootProps()} className={`border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-colors ${isDragActive ? 'border-orange-500 bg-orange-500/5' : 'border-zinc-700 hover:border-zinc-600'}`}>
+                            <div {...getRootProps()} className={`border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-colors ${isDragActive ? 'border-cyan-500 bg-cyan-500/5' : 'border-zinc-700 hover:border-zinc-600'}`}>
                                 <input {...getInputProps()} />
                                 <Upload size={48} className="mx-auto text-zinc-600 mb-4" />
                                 <p className="text-zinc-400 font-medium">Drag & drop files here</p>

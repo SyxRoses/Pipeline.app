@@ -15,11 +15,13 @@ export default {
           50: '#f8fafc',
           900: '#0f172a',
         },
-        // Industrial Safety Orange (High Vis)
-        orange: {
-          500: '#f97316',
-          600: '#ea580c',
-          700: '#c2410c',
+        // Electric Cyan (Fabric-style)
+        cyan: {
+          400: '#22d3ee', // Bright text
+          500: '#06b6d4', // Primary
+          600: '#0891b2', // Hover/Active
+          700: '#0e7490', // Darker
+          900: '#164e63', // Deep background
         },
         emerald: {
           500: '#10b981',
@@ -37,7 +39,7 @@ export default {
       boxShadow: {
         'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.3)',
         'md': '0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3)',
-        'glow': '0 0 15px rgba(249, 115, 22, 0.3)', // Orange glow
+        'glow': '0 0 20px rgba(6, 182, 212, 0.5)', // Cyan glow
       },
     },
   },

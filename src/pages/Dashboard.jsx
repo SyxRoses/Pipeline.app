@@ -13,7 +13,7 @@ const Dashboard = () => {
     if (isLoading) {
         return (
             <div className="flex items-center justify-center h-full">
-                <div className="text-orange-500 animate-pulse">Loading...</div>
+                <div className="text-cyan-500 animate-pulse">Loading...</div>
             </div>
         );
     }
@@ -31,7 +31,7 @@ const Dashboard = () => {
                 {!project && (
                     <button
                         onClick={() => setShowOnboarding(true)}
-                        className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-500 text-white rounded-lg text-sm font-medium transition-colors"
+                        className="flex items-center gap-2 px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg text-sm font-medium transition-colors"
                     >
                         <Rocket size={16} /> Start New Project
                     </button>
@@ -71,7 +71,7 @@ const Dashboard = () => {
                     value={mockData.projects[0].days_without_incident}
                     unit="Days"
                     icon={Calendar}
-                    color="orange"
+                    color="cyan"
                     trend="up"
                     trendValue="+7"
                 />
@@ -89,7 +89,7 @@ const Dashboard = () => {
             </div>
 
             {/* FAB */}
-            <button className="fixed bottom-20 md:bottom-8 right-6 md:right-8 bg-orange-600 hover:bg-orange-500 text-white w-14 h-14 rounded-full shadow-[0_0_20px_rgba(234,88,12,0.5)] flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-50 border border-orange-400/20">
+            <button className="fixed bottom-20 md:bottom-8 right-6 md:right-8 bg-cyan-600 hover:bg-cyan-500 text-white w-14 h-14 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-50 border border-cyan-400/20">
                 <Plus size={28} />
             </button>
         </div>

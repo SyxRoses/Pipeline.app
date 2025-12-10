@@ -13,7 +13,7 @@ const ChannelList = () => {
         <button
             onClick={() => setActiveChannelId(channel.id)}
             className={`w-full flex items-center justify-between px-3 py-1.5 rounded-md text-sm transition-colors group mb-0.5 ${activeChannelId === channel.id
-                    ? 'bg-[#2d2d2d] text-white border-l-2 border-orange-500 pl-[10px]'
+                    ? 'bg-[#2d2d2d] text-white border-l-2 border-cyan-500 pl-[10px]'
                     : 'text-[#a3a3a3] hover:bg-[#262626] hover:text-white border-l-2 border-transparent pl-[10px]'
                 }`}
         >
@@ -22,7 +22,7 @@ const ChannelList = () => {
                 <span className="truncate">{channel.name}</span>
             </div>
             {channel.unread > 0 && (
-                <span className="bg-orange-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[1.2rem] text-center">
+                <span className="bg-cyan-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[1.2rem] text-center">
                     {channel.unread}
                 </span>
             )}

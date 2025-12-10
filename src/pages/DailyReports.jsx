@@ -34,13 +34,13 @@ const DailyReports = () => {
                 <div className="bg-surface p-1 rounded-lg border border-zinc-700 inline-flex shadow-inner">
                     <button
                         onClick={() => setView('new')}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition-all ${view === 'new' ? 'bg-orange-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
+                        className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition-all ${view === 'new' ? 'bg-cyan-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
                     >
                         <PlusCircle size={16} /> New Report
                     </button>
                     <button
                         onClick={() => setView('history')}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition-all ${view === 'history' ? 'bg-orange-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
+                        className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition-all ${view === 'history' ? 'bg-cyan-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
                     >
                         <History size={16} /> History
                     </button>
@@ -60,7 +60,7 @@ const DailyReports = () => {
                             <button
                                 key={tab.key}
                                 onClick={() => setHistoryFilter(tab.key)}
-                                className={`flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg border transition-colors ${historyFilter === tab.key ? 'bg-orange-600/10 border-orange-500/30 text-orange-500' : 'border-zinc-700 text-zinc-400 hover:border-zinc-600'}`}
+                                className={`flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg border transition-colors ${historyFilter === tab.key ? 'bg-cyan-600/10 border-cyan-500/30 text-cyan-500' : 'border-zinc-700 text-zinc-400 hover:border-zinc-600'}`}
                             >
                                 <tab.icon size={14} /> {tab.label}
                             </button>
@@ -78,19 +78,19 @@ const DailyReports = () => {
                     <div className="bg-surface p-1 rounded-lg border border-zinc-700 inline-flex shadow-inner">
                         <button
                             onClick={() => setActiveTab('construction')}
-                            className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'construction' ? 'bg-orange-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
+                            className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'construction' ? 'bg-cyan-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
                         >
                             Construction
                         </button>
                         <button
                             onClick={() => setActiveTab('inspection')}
-                            className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'inspection' ? 'bg-orange-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
+                            className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'inspection' ? 'bg-cyan-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
                         >
                             Inspection
                         </button>
                         <button
                             onClick={() => setActiveTab('safety')}
-                            className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'safety' ? 'bg-orange-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
+                            className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'safety' ? 'bg-cyan-600 text-white shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'}`}
                         >
                             Safety
                         </button>
@@ -100,7 +100,7 @@ const DailyReports = () => {
                         {activeTab === 'construction' && (
                             <form className="space-y-6">
                                 <div className="flex items-center gap-2 text-lg font-semibold text-white border-b border-zinc-800 pb-3">
-                                    <HardHat className="text-orange-500" />
+                                    <HardHat className="text-cyan-500" />
                                     <h2>Superintendent Report</h2>
                                 </div>
 
@@ -147,7 +147,7 @@ const DailyReports = () => {
                         {activeTab === 'inspection' && (
                             <form className="space-y-6">
                                 <div className="flex items-center gap-2 text-lg font-semibold text-white border-b border-zinc-800 pb-3">
-                                    <Clipboard className="text-orange-500" />
+                                    <Clipboard className="text-cyan-500" />
                                     <h2>Weld Inspection Log</h2>
                                 </div>
 
@@ -164,11 +164,11 @@ const DailyReports = () => {
                                         <label className="block text-sm font-medium text-zinc-400 mb-1">Visual Inspection</label>
                                         <div className="flex gap-4 mt-2">
                                             <label className="flex items-center gap-2">
-                                                <input type="radio" name="visual" className="text-orange-500 focus:ring-orange-500 bg-zinc-800 border-zinc-600" />
+                                                <input type="radio" name="visual" className="text-cyan-500 focus:ring-cyan-500 bg-zinc-800 border-zinc-600" />
                                                 <span className="text-sm font-medium text-emerald-500">Pass</span>
                                             </label>
                                             <label className="flex items-center gap-2">
-                                                <input type="radio" name="visual" className="text-orange-500 focus:ring-orange-500 bg-zinc-800 border-zinc-600" />
+                                                <input type="radio" name="visual" className="text-cyan-500 focus:ring-cyan-500 bg-zinc-800 border-zinc-600" />
                                                 <span className="text-sm font-medium text-rose-500">Fail</span>
                                             </label>
                                         </div>
@@ -190,7 +190,7 @@ const DailyReports = () => {
                         {activeTab === 'safety' && (
                             <form className="space-y-6">
                                 <div className="flex items-center gap-2 text-lg font-semibold text-white border-b border-zinc-800 pb-3">
-                                    <Shield className="text-orange-500" />
+                                    <Shield className="text-cyan-500" />
                                     <h2>Safety & HSE Checklist</h2>
                                 </div>
 
@@ -200,11 +200,11 @@ const DailyReports = () => {
                                             <span className="text-sm font-medium text-zinc-300">{item}</span>
                                             <div className="flex gap-4">
                                                 <label className="flex items-center gap-1">
-                                                    <input type="radio" name={`check-${idx}`} className="text-orange-500 focus:ring-orange-500 bg-zinc-800 border-zinc-600" />
+                                                    <input type="radio" name={`check-${idx}`} className="text-cyan-500 focus:ring-cyan-500 bg-zinc-800 border-zinc-600" />
                                                     <span className="text-xs text-zinc-400">Yes</span>
                                                 </label>
                                                 <label className="flex items-center gap-1">
-                                                    <input type="radio" name={`check-${idx}`} className="text-orange-500 focus:ring-orange-500 bg-zinc-800 border-zinc-600" />
+                                                    <input type="radio" name={`check-${idx}`} className="text-cyan-500 focus:ring-cyan-500 bg-zinc-800 border-zinc-600" />
                                                     <span className="text-xs text-zinc-400">No</span>
                                                 </label>
                                             </div>
